@@ -11,9 +11,20 @@ package multinacional;
  */
 public class Main {
     public static void main(String[] args) {
-    Producto producto= new Lavadora("A23", 300, 0, "Fenza", 'A');
+    Producto producto1= new Lavadora("A23", 300, 30, "Fenza", 'A');
+    Producto producto2= new Lavadora("A23", 300, 30, "Fenza", 'A');
     
-        System.out.println(producto.validarStock(1));
+        System.out.println(producto1.validarStock(1));
+        
+        RegistroProducto registro= RegistroProducto.getRegistra();
+        
+        registro.agregaProducto(producto1);
+        registro.agregaProducto(producto2);
+        registro.buscarProducto("A23");
+        registro.mostrarProducto();
+        System.out.println("----------------------");
+        registro.eliminarProducto("A23");
+        registro.mostrarProducto();
     }
     
 }

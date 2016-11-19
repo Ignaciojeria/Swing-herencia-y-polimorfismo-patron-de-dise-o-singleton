@@ -55,5 +55,10 @@ public class Refrigerador extends Electrodomestico {
 
         return descuento;
     }
+
+    @Override
+    public String toString() {
+        return "Refrigerador{" + "cantidadPies=" + cantidadPies + '}'+ super.toString();
+    }
     
 }

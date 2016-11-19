@@ -22,6 +22,11 @@ public abstract class Electrodomestico extends Producto implements ProductoDesco
         }
         
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "marca=" + marca + '}';
+    }
     
 
     

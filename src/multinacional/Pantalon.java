@@ -54,6 +54,11 @@ public class Pantalon extends Producto{
         
         return total;
     }
+
+    @Override
+    public String toString() {
+        return "Pantalon{" + "tipo=" + tipo + ", sexo=" + sexo + '}'+ super.toString();
+    }
     
     
 }
